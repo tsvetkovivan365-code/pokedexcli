@@ -4,6 +4,7 @@ import (
 	"testing"
 )
 
+// TestCleanInput verifies that cleanInput normalizes input correctly
 func TestCleanInput(t *testing.T) {
 	cases := []struct {
 		input string
