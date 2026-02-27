@@ -16,7 +16,7 @@ func startRepl() {
 
 	// Initialize the shared config with API client and pagination state
 	cfg := &config{
-		pokeapiClient: pokeapi.NewClient(5 * time.Second),
+		pokeapiClient: pokeapi.NewClient(5 * time.Second, 10 * time.Second),
 		nextLocationsURL: nil,
 		prevLocationsURL: nil,
 	}
